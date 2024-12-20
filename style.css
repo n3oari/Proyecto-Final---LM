@@ -1,3 +1,26 @@
+body {
+  background-color: black;
+  color: white;
+  font-family: "Arial", sans-serif;
+}
+header,
+.custom-footer {
+  background-color: #1a1a1a;
+  color: white;
+}
+.custom-footer {
+  padding: 20px 0;
+}
+.btn-pink {
+  background-color: #ff69b4;
+  color: white;
+  border: none;
+}
+
+.btn-pink:hover {
+  background-color: #ff1493;
+}
+
 .card-img-top {
   width: 100%;
   height: 200px;
@@ -13,8 +36,153 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  background-color: #2a2a2a;
+  border: 1px solid #ff69b4;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
 }
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card-title,
+.card-text {
+  color: white;
+}
+
 .logo {
   width: 100px;
   height: auto;
+  transition: transform 0.3s;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+}
+
+.dropdown-menu {
+  background-color: #1a1a1a;
+  color: white;
+}
+
+.dropdown-item:hover {
+  background-color: #ff69b4;
+  color: white;
+}
+
+.text-decoration-none:hover {
+  color: #ff69b4;
+}
+
+.custom-footer a {
+  color: #ff69b4;
+}
+
+.custom-footer a:hover {
+  color: #ff1493;
+}
+
+.img-fluid {
+  width: 100%;
+  height: 300px;
+}
+
+h3 {
+  font-size: 30px;
+  color: white;
+}
+
+.text-logo {
+  font-size: 20px;
+  font-family: "Orbitron", sans-serif;
+  color: #ff69b4;
+  text-shadow: 0 0 10px #ff69b4, 0 0 20px #ff69b4, 0 0 30px #ff69b4;
+  letter-spacing: 2px;
+}
+
+/*media queries*/
+
+@media (max-width: 768px) {
+  header,
+  .custom-footer {
+    text-align: center;
+  }
+
+  .d-flex {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .flex-grow-1 {
+    margin: 10px 0;
+  }
+
+  .card-body {
+    height: auto;
+  }
+
+  .card {
+    margin-bottom: 15px;
+  }
+
+  .dropdown-menu {
+    width: 100%;
+    text-align: center;
+  }
+
+  .text-logo {
+    font-size: 18px;
+  }
+
+  .img-fluid {
+    height: auto;
+  }
+
+  .btn-pink {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  header,
+  .custom-footer {
+    text-align: center;
+  }
+
+  .d-flex {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .flex-grow-1 {
+    margin: 10px 0;
+  }
+
+  .card-body {
+    height: auto;
+  }
+
+  .card {
+    margin-bottom: 15px;
+  }
+
+  .dropdown-menu {
+    width: 100%;
+    text-align: center;
+  }
+
+  .text-logo {
+    font-size: 20px;
+  }
+
+  .img-fluid {
+    height: auto;
+  }
+
+  .btn-pink {
+    width: 100%;
+    margin-top: 10px;
+  }
 }
